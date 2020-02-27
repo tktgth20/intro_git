@@ -6,7 +6,7 @@ public class YCNo851{
 	public static void main(String[] arguments)
 	{
 		final String ERR_MSG  = "assert";
-		//String args = arguments[1];
+		//String args = arguments[1];//
 		String args = "3\n1\n5\n3\n"; //input-sumple1
 		//String args = "3\n3\n3\n4\n";   //input-sumple2
 		//String args = "3\n1 5 3";     //input-sumple3
