@@ -1,17 +1,34 @@
 import java.util.*;
 import java.lang.Exception;
 import java.lang.*;
+import java.util.Scanner;
 
-public class YCNo851{
+class YCNo851{
 	public static void main(String[] arguments)
 	{
 		final String ERR_MSG  = "assert";
-		//String args = arguments[1];//
-		String args = "3\n1\n5\n3\n"; //input-sumple1
-		//String args = "3\n3\n3\n4\n";   //input-sumple2
-		//String args = "3\n1 5 3";     //input-sumple3
+		String args;
+
+		//入力
+		System.out.print("入力（1:sumple1,2:sumple2,3:sumple-3,9:free）=>");
+		Scanner scan = new Scanner(System.in);
+		int w_input = Integer.parseInt(scan.nextLine());
+		if(w_input == 1){
+			args = "3\n1\n5\n3\n"; //想定結果 6
+		}else if(w_input == 2){
+			args = "3\n3\n3\n4\n"; //想定結果 6
+		}else if(w_input == 3){
+			args = "3\n1 5 3"; //想定結果 assert
+		}else{
+			System.out.println("assert");
+			scan.close();
+			return;
+			//args = scan.nextLine();
+		}
+		scan.close();
+		//
+
 		String output;
-		
 		TestCase test_a = new TestCase(args); 
 
 		if(test_a.getErr_flg()){
