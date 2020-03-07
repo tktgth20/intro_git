@@ -55,12 +55,6 @@ public class YCNo47{
             w_totalNum *= CONST2;
             clapCnt++;
         }
-        if(numberIWant != w_totalNum){
-            //目標数が「手を叩く回数-1」で得られる最大数を超える場合
-          if(numberIWant  > w_totalNum-CONST2){
-               clapCnt++;
-            }
-        }
         return clapCnt;
     }
 }
