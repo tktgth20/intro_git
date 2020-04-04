@@ -20,7 +20,7 @@ class YCNo994 {
             firstVertrix.add(1);
             int cnt = calcSupplyCapacity(coin,list,firstVertrix,0);
             int result =0;
-            if(cnt < coin ){
+            if(cnt+1 < coin){
                 result = -1;
             }else{
                 result = coin-1;
